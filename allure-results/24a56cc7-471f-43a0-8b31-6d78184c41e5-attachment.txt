@@ -1,0 +1,8 @@
+[LOG]: Available language filters: 58
+[LOG]: Filter 0: English
+(8,537)
+[LOG]: Beginner(3,839)
+[LOG]: Intermediate(3,506)
+[LOG]: Advanced(378)
+[LOG]: Mixed(814)
+[LOG]: Scenario finished2

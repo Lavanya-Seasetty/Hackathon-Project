@@ -13,7 +13,7 @@ let home: HomePage;
 let searchPage: SearchPage;
 
 test.beforeAll(async ({ browser }) => {
-  Logger.log('Scenario started2');
+  Logger.log('Scenario started 2');
   context = await browser.newContext();
   page = await context.newPage();
   home = new HomePage(page);
@@ -22,7 +22,7 @@ test.beforeAll(async ({ browser }) => {
 
 test.afterAll(async () => {
   await context.close();
-  Logger.log('Scenario finished2');
+  Logger.log('Scenario finished 2');
 });
 
 test('Filters: open and count languages', async () => {
@@ -39,6 +39,7 @@ test('Filters: open and count languages', async () => {
 test('Filters: iterate languages 0-4 and list levels', async () => {
   const languageOptions = await searchPage.getLanguageOptions();
   const count = await languageOptions.count();
+  
   Logger.log(`Available language filters: ${count}`);
 
   const view = page.getByRole('button', { name: 'View' });
