@@ -1,4 +1,0 @@
-[LOG]: Scenario started 3
-[LOG]: ₹2,099
-[LOG]: ₹13,999
-[LOG]: ₹2,099

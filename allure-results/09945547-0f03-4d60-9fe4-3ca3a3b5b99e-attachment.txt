@@ -1,2 +1,0 @@
-[LOG]: Scenario started 2
-[LOG]: Available language filters: 58

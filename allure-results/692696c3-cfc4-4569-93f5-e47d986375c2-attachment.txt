@@ -1,3 +1,0 @@
-[LOG]: Starting test...
-[LOG]: Please enter your work email address
-[LOG]: Test finished.
