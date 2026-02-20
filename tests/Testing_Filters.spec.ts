@@ -127,7 +127,7 @@ test('Search: apply filters', async () => {
   }
 });
 
-test('Search: read top 2 course cards', async () => {
+test('@sanity Search: read top 2 course cards', async () => {
   try {
     for (let i = 0; i < 2; i++) {
       try {
@@ -144,7 +144,7 @@ test('Search: read top 2 course cards', async () => {
         Logger.log(`Course: ${details.name}, Rating: ${details.rating}, Hours: ${details.hours}`);
       } catch (innerError) {
         Logger.error(`Error reading course card ${i}: ${(innerError as Error).message}`);
-        // continue loop even if one card fails
+        
       }
     }
   } catch (error) {

@@ -75,7 +75,7 @@ test.afterAll(async () => {
   }
 });
 
-test('University: open and submit form', async () => {
+test('@smoke University: open and submit form', async () => {
   try {
     await home.goto();
     await home.openForUniversities();
@@ -88,7 +88,7 @@ test('University: open and submit form', async () => {
   }
 });
 
-test('University: re-submit and validate error', async () => {
+test('@smoke University: re-submit and validate error', async () => {
   try {
     await formPage.fillForm();
     const msg = (await formPage.getErrorMessage()) ?? '';

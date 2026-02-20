@@ -116,7 +116,7 @@ test('@smoke @sanity Filters: open and count languages', async () => {
   }
 });
 
-test('Filters: iterate languages 0-4 and list levels', async () => {
+test('@sanity Filters: iterate languages 0-4 and list levels', async () => {
   try {
     const languageOptions = await searchPage.getLanguageOptions();
     const count = await languageOptions.count();
@@ -144,7 +144,6 @@ test('Filters: iterate languages 0-4 and list levels', async () => {
         await searchPage.clearFilters();
       } catch (innerError) {
         Logger.error(`Error applying filter ${j}: ${(innerError as Error).message}`);
-        // continue loop even if one filter fails
       }
     }
   } catch (error) {

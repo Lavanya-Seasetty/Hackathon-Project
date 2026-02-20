@@ -73,7 +73,7 @@ test.afterAll(async () => {
   }
 });
 
-test('Plus: open and log pricing', async () => {
+test('@sanity Plus: open and log pricing', async () => {
   try {
     await home.goto();
     await home.openCourseraPlus();
