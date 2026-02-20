@@ -28,7 +28,8 @@ export class UniversityFormPage {
 }
 
   async getErrorMessage() {
-    return await this.page.locator('#ValidMsgEmail').textContent();
+    const errormessage = this.page.locator('#ValidMsgEmail')
+    return await errormessage.textContent();
   }
 }
 
