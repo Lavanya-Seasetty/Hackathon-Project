@@ -102,7 +102,7 @@ test.afterAll(async () => {
   }
 });
 
-test('Filters: open and count languages', async () => {
+test('@smoke @sanity Filters: open and count languages', async () => {
   try {
     await home.goto();
     await home.searchCourse('Language Learning');
