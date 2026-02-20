@@ -54,7 +54,7 @@ let formPage: UniversityFormPage;
 
 test.beforeAll(async ({ browser }) => {
   try {
-    Logger.log('Scenario started3');
+    Logger.log('Scenario started 1');
     context = await browser.newContext();
     page = await context.newPage();
     home = new HomePage(page);
@@ -68,7 +68,7 @@ test.beforeAll(async ({ browser }) => {
 test.afterAll(async () => {
   try {
     await context.close();
-    Logger.log('Scenario finished3');
+    Logger.log('Scenario finished 1');
   } catch (error) {
     Logger.error(`Error in afterAll: ${(error as Error).message}`);
     throw error;
