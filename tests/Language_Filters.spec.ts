@@ -94,7 +94,7 @@ test.beforeAll(async ({ browser }) => {
 
 test.afterAll(async () => {
   try {
-    await context.close();
+    // await context.close();
     Logger.log('Scenario finished 2');
   } catch (error) {
     Logger.error(`Error in afterAll: ${(error as Error).message}`);
