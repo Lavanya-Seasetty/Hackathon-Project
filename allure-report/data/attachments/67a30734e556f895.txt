@@ -1,2 +1,0 @@
-[LOG]: Scenario started 1
-[LOG]: Please enter your work email address
