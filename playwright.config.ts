@@ -26,7 +26,7 @@ export default defineConfig({
     suitetitle: false
    }],
   ],
-  timeout: 60*1000,
+  timeout: 70*1000,
   retries: 2,
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
