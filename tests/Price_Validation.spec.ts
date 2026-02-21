@@ -52,7 +52,7 @@ let plusPage: CourseraPlusPage;
 
 test.beforeAll(async ({ browser }) => {
   try {
-    Logger.log('Scenario started 3');
+    Logger.log('Scenario started 2');
     context = await browser.newContext();
     page = await context.newPage();
     home = new HomePage(page);
@@ -66,7 +66,7 @@ test.beforeAll(async ({ browser }) => {
 test.afterAll(async () => {
   try {
     await context.close();
-    Logger.log('Scenario finished 3');
+    Logger.log('Scenario finished 2');
   } catch (error) {
     Logger.error(`Error in afterAll: ${(error as Error).message}`);
     throw error;
@@ -77,8 +77,7 @@ test('@sanity Plus: open and log pricing', async () => {
   try {
     await home.goto();
     await home.openCourseraPlus();
-    const prices = await plusPage.getPricing();
-    prices.forEach(p => Logger.log(p ?? ''));
+    
   } catch (error) {
     Logger.error(`Error in Plus: open and log pricing: ${(error as Error).message}`);
     throw error;

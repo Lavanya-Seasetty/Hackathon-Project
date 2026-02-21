@@ -81,7 +81,7 @@ let searchPage: SearchPage;
 
 test.beforeAll(async ({ browser }) => {
   try {
-    Logger.log('Scenario started 2');
+    Logger.log('Scenario started 3');
     context = await browser.newContext();
     page = await context.newPage();
     home = new HomePage(page);
@@ -95,7 +95,7 @@ test.beforeAll(async ({ browser }) => {
 test.afterAll(async () => {
   try {
     await context.close();
-    Logger.log('Scenario finished 2');
+    Logger.log('Scenario finished 3');
   } catch (error) {
     Logger.error(`Error in afterAll: ${(error as Error).message}`);
     throw error;
