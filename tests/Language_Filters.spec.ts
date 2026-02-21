@@ -102,7 +102,7 @@ test.afterAll(async () => {
   }
 });
 
-test('@smoke @sanity Filters: open and count languages', async () => {
+test(' Filters: open and count languages', async () => {
   try {
     await home.goto();
     await home.searchCourse('Language Learning');
@@ -116,7 +116,7 @@ test('@smoke @sanity Filters: open and count languages', async () => {
   }
 });
 
-test('@sanity Filters: iterate languages 0-4 and list levels', async () => {
+test('Filters: iterate languages 0-4 and list levels', async () => {
   try {
     const languageOptions = await searchPage.getLanguageOptions();
     const count = await languageOptions.count();

@@ -75,7 +75,7 @@ test.afterAll(async () => {
   }
 });
 
-test('@smoke University: open and submit form', async () => {
+test(' University: open and submit form', async () => {
   try {
     await home.goto();
     await home.openForUniversities();
