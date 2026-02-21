@@ -27,12 +27,12 @@ export default defineConfig({
    }],
   ],
   timeout: 70*1000,
-  retries: 2,
+  retries: process.env.CI ? 2:0,
   
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
-    // baseURL: 'http://localhost:3000',
+    // baseURL: 'https://www.coursera.org/',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
@@ -87,3 +87,6 @@ export default defineConfig({
 // 1.npm i -D @playwright/test allure-playwright allure-commandline         
 // 2.npx allure-commandline generate ".\allure-results" --clean -o ".\allure-report"  
 // 3.npx allure open ".\allure-report"
+
+
+//npm install -D allure-playwright
